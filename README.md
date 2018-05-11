@@ -20,4 +20,8 @@ Font :
 
 ### API
 
+### Translate
+
+  * ngx-translate
+
 
