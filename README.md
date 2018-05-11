@@ -21,7 +21,7 @@ Font :
 ### API
 
 ### Translate
-
-  * ngx-translate
+* ngx-translate
+  > https://github.com/ngx-translate
 
 
