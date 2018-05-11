@@ -13,6 +13,7 @@
     padding: em(10) 0 em(10) em(20);
     &.active {
       border-left: 2px solid $picton-blue;
+      background: $black-russian;
     }    
   }
 }

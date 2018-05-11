@@ -4,6 +4,8 @@
 @import './assets/scss/helper';
 @import '../node_modules/bootstrap-4-grid/scss/grid';
 
+* { margin: 0; padding: 0}
+
 body {
   font-family: 'Noto Sans', sans-serif;
 }

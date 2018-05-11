@@ -14,12 +14,13 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 // Route Configuration
 export const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'skils', component: SkillsComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'graduation', component: GraduationComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'style-guide', component: ContactComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
 
