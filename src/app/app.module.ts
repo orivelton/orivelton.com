@@ -17,6 +17,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { TranslateComponent } from './components/translate/translate.component';
+import { TemplateComponent } from './pages/template/template.component';
+import { StyleGuideComponent } from './pages/style-guide/style-guide.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -33,7 +35,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     LogoComponent,
     MenuComponent,
-    TranslateComponent
+    TranslateComponent,
+    TemplateComponent,
+    StyleGuideComponent
   ],
   imports: [
     BrowserModule,

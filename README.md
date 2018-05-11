@@ -25,3 +25,12 @@ Font :
   > https://github.com/ngx-translate
 
 
+### CLI 
+* nvm use 8.11.1
+
+
+### Grid system
+
+ *https://getbootstrap.com/docs/4.1/layout/grid/*
+
+
