@@ -1,11 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-/**
- * Translate
- */
+import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { routing } from './app.router';
 
 
 import { AppComponent } from './app.component';
@@ -19,6 +18,10 @@ import { MenuComponent } from './components/menu/menu.component';
 import { TranslateComponent } from './components/translate/translate.component';
 import { TemplateComponent } from './pages/template/template.component';
 import { StyleGuideComponent } from './pages/style-guide/style-guide.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { ProgressComponent } from './components/progress/progress.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -37,11 +40,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     MenuComponent,
     TranslateComponent,
     TemplateComponent,
-    StyleGuideComponent
+    StyleGuideComponent,
+    NotFoundComponent,
+    ProgressComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    routing,
+    RouterModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

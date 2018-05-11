@@ -1,4 +1,14 @@
 {
-  "Title": "Exemple de traduction",
-  "Intro": "Bonjour je m'appelle Arthur, j'ai 42 ans."
+  "menu": {
+    "home": "Home",
+    "skils": "Habilidades",
+    "projects": "Projetos",
+    "graduation": "Formação",
+    "contact": "Contato",
+    "styleGuide": "Guia de Estilo"
+  },
+
+  "skills" : {
+    "title": "Habilidades"
+  }
 }

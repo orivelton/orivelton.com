@@ -1,0 +1,18 @@
+@import './../../../assets/scss/helper.scss';
+
+.group-menu {
+  padding: 0;
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    width: 100%;
+    display: block;
+    color: $white;
+    text-decoration: none;
+    padding: em(10) 0 em(10) em(20);
+    &.active {
+      border-left: 2px solid $picton-blue;
+    }    
+  }
+}

@@ -1,4 +1,14 @@
 {
-  "Title": "Translation example",
-  "Intro": "Hello I am Arthur, I am 42 years old."
+  "menu": {
+    "home": "Home",
+    "skils": "Skills",
+    "projects": "Projects",
+    "graduation": "Graduation",
+    "contact": "Contact",
+    "styleGuide": "Style Guide"
+  },
+  
+  "skills" : {
+    "title": "Skill"
+  }
 }
