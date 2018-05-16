@@ -7,8 +7,31 @@
     "contact": "Contact",
     "styleGuide": "Style Guide"
   },
-  
+
+  "home" : {
+    "title": "Home",
+    "subTitle": "My Home"
+  },
+
   "skills" : {
-    "title": "Skill"
+    "title": "Skill",
+    "subTitle": "My Skills"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "subTitle": "My Projects"
+  },
+
+  "graduation": {
+    "title": "Graduation",
+    "subTitle": "My Graduations"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subTitle": "My Contact"
   }
+
+
 }

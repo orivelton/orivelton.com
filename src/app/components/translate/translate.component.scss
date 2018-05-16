@@ -1,0 +1,15 @@
+@import './../../../assets/scss/helper.scss';
+
+.translate {
+  position: fixed;
+  max-width: em(50);
+  background: $midnight-express;
+  z-index: 99;
+  right: 0;
+  &__en, &__pt {
+    width: 100%;
+    background: none;
+    color: $white;
+    border: 0;
+  }
+}

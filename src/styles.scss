@@ -9,3 +9,16 @@
 body {
   font-family: 'Noto Sans', sans-serif;
 }
+
+.header {
+  &__title {
+    font-size: em(28);
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: em(18);
+    font-style: italic;
+    margin-bottom: em(20);
+  }
+}

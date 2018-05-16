@@ -1,0 +1,9 @@
+@import './../../../assets/scss/helper.scss';
+
+.box-project {
+  border: solid em(1) $picton-blue;
+  &__img {
+    width: 100%;
+    max-width: em(400);
+  }
+}

@@ -23,6 +23,7 @@
     "@ngx-translate/core": "^10.0.1",
     "@ngx-translate/http-loader": "^3.0.1",
     "core-js": "^2.5.4",
+    "n": "^2.1.10",
     "popper.js": "^1.14.3",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
