@@ -9,6 +9,17 @@
   },
 
   "skills" : {
-    "title": "Habilidades"
+    "title": "Habilidades",
+    "subTitle": "Minhas habilidades"
+  },
+
+  "projects": {
+    "title": "Projetos",
+    "subTitle": "Meus Projetos"
+  },
+
+  "contact": {
+    "title": "Contatos",
+    "subTitle": "Meus Contatos"
   }
 }

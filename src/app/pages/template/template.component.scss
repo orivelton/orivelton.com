@@ -3,4 +3,7 @@
 .menu {
   background: $midnight-express;
   height: vh(100);
+  @media (max-width: 414px) {
+    height: auto;
+  }
 }
