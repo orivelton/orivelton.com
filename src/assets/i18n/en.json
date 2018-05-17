@@ -30,8 +30,9 @@
 
   "contact": {
     "title": "Contact",
-    "subTitle": "My Contact"
+    "subTitle": "My Contact",
+    "name": "Name",
+    "email": "E-mail",
+    "mensage": "Your Mensage"
   }
-
-
 }

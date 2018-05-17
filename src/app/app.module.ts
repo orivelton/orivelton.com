@@ -24,7 +24,11 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  if (/.+\.\w\w.*/.test(window.location.href)) {
+    return new TranslateHttpLoader(http, '/orivelton.com/assets/i18n/', '.json');
+  } else {
+    return new TranslateHttpLoader(http);
+  }
 }
 
 @NgModule({

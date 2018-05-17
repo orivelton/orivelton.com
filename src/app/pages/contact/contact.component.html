@@ -2,3 +2,18 @@
   <h1 class="header__title">{{'contact.title' | translate:user}}</h1>
   <h2 class="header__description">{{'contact.subTitle' | translate:user}}</h2>
 </div>
+
+<div class="col-md-6 contact-form">
+    <form method="POST" action="https://formspree.io/orivelton10@gmail.com">
+      <label for="name" class="contact-form__label">{{'contact.name' | translate:user}}</label>
+      <input type="text" id="name" required name="name" class="contact-form__text">
+      <label for="email" class="contact-form__label">{{'contact.email' | translate:user}}</label>
+      <input type="email" id="email" required name="email" class="contact-form__text">
+      <label for="email" class="contact-form__label">{{'contact.mensage' | translate:user}}</label>
+      <textarea name="message" class="contact-form__text" required></textarea>
+      <button type="submit" class="contact-form__send">Enviar</button>
+
+      <input type="text" name="_gotcha" style="display:none" />
+      <!-- <input type="hidden" name="_next" value="https://orivelton.com.br"> -->
+    </form>
+</div>

@@ -19,7 +19,10 @@
   },
 
   "contact": {
-    "title": "Contatos",
-    "subTitle": "Meus Contatos"
+    "title": "Contato",
+    "subTitle": "Meus contatos",
+    "name": "Nome",
+    "email": "E-mail",
+    "mensage": "Sua mensagem"
   }
 }
