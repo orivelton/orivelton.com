@@ -11,9 +11,21 @@
     color: $white;
     text-decoration: none;
     padding: em(10) 0 em(10) em(20);
+    position: relative;
     &.active {
       border-left: 2px solid $picton-blue;
       background: $black-russian;
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 21px 32px 21px 0;
+        border-color: transparent #ffffff transparent transparent;
+        position: absolute;
+        right: -16px;
+        top: 0;
+      }
     }    
   }
 }
