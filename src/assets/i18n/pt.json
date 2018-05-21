@@ -8,6 +8,11 @@
     "styleGuide": "Guia de Estilo"
   },
 
+  "home" : {
+    "title": "Home",
+    "subTitle": "My Home"
+  },
+
   "skills" : {
     "title": "Habilidades",
     "subTitle": "Minhas habilidades"
@@ -16,6 +21,11 @@
   "projects": {
     "title": "Projetos",
     "subTitle": "Meus Projetos"
+  },
+
+  "graduation": {
+    "title": "Graduation",
+    "subTitle": "My Graduations"
   },
 
   "contact": {

@@ -1,9 +1,4 @@
 # orivelton.com
-Font :
-
-1. https://www.behance.net/gallery/30875889/Dashboard-UIUX-Kit-Design-For-Free-Download
-
-2. https://www.photopea.com/
 
 
 ## Stack
@@ -39,5 +34,8 @@ Font :
 https://formspree.io
 
 ng build --prod --output-path=dist --base-href "https://orivelton.github.io/orivelton.com/" && ngh
+
+### links
+  https://www.photopea.com/
 
 
