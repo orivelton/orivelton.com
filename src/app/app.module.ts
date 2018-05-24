@@ -20,6 +20,7 @@ import { TemplateComponent } from './pages/template/template.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProgressComponent } from './components/progress/progress.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
+import { JobsComponent } from './components/jobs/jobs.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -44,7 +45,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     TemplateComponent,
     NotFoundComponent,
     ProgressComponent,
-    AvatarComponent
+    AvatarComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
