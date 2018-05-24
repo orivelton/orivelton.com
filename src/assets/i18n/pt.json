@@ -34,5 +34,11 @@
     "name": "Nome",
     "email": "E-mail",
     "mensage": "Sua mensagem"
+  },
+
+  "a": {
+    "title": "Voe Gol e concorra a 100 Milhões de milhas Smiles",
+    "date": "Fevereiro 2015 – Agosto 2015",
+    "description": "Participação no projeto Voe Gol e concorra a 100 Milhões de milhas Smiles pela empresa e-Deploy, sendo responsável pelo front-end."
   }
 }

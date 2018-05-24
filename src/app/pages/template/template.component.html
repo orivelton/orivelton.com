@@ -1,14 +1,16 @@
 <div class="columns">
   <div class="column is-2 menu">
     <app-avatar></app-avatar>
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </a>
     <app-menu></app-menu>
   </div>
   <div class="column is-10">
     <div class="column is-12 top-bar">
-      <section class="hero is-light">
-        <app-translate></app-translate>
-      </section>
+      <app-translate></app-translate>
     </div>
     <router-outlet></router-outlet>
   </div>
 </div>
+

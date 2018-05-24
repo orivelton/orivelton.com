@@ -21,6 +21,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProgressComponent } from './components/progress/progress.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { JobsComponent } from './components/jobs/jobs.component';
+import { FormComponent } from './components/form/form.component';
+import { AllSkillComponent } from './components/all-skill/all-skill.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -46,7 +48,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     NotFoundComponent,
     ProgressComponent,
     AvatarComponent,
-    JobsComponent
+    JobsComponent,
+    FormComponent,
+    AllSkillComponent
   ],
   imports: [
     BrowserModule,

@@ -24,9 +24,9 @@
 * nvm use 8.11.1
 
 
-### Grid system
+### Framework css
 
- *https://getbootstrap.com/docs/4.1/layout/grid/*
+ https://bulma.io/
 
 
 ### Form
