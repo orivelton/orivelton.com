@@ -19,8 +19,6 @@ import { TranslateComponent } from './components/translate/translate.component';
 import { TemplateComponent } from './pages/template/template.component';
 import { StyleGuideComponent } from './pages/style-guide/style-guide.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-
-import { NgProgressModule } from '@ngx-progressbar/core';
 import { ProgressComponent } from './components/progress/progress.component';
 
 // AoT requires an exported function for factories
