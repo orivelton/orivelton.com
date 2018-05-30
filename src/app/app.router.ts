@@ -9,7 +9,6 @@ import { LogoComponent } from './components/logo/logo.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { TranslateComponent } from './components/translate/translate.component';
 import { TemplateComponent } from './pages/template/template.component';
-import { StyleGuideComponent } from './pages/style-guide/style-guide.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 // Route Configuration
@@ -19,7 +18,6 @@ export const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'graduation', component: GraduationComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'style-guide', component: ContactComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];

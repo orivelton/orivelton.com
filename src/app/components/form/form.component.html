@@ -1,0 +1,21 @@
+<div class="columns">
+  <div class="column is-three-fifths">
+    <div class="contact-form">
+        <form method="POST" action="https://formspree.io/orivelton10@gmail.com">
+          <label for="name" class="contact-form__label">{{'contact.name' | translate:user}}</label>
+          <input type="text" id="name" name="name" class="input" required>
+    
+          <label for="email" class="contact-form__label">{{'contact.email' | translate:user}}</label>
+          <input type="email" id="email" name="email" class="input" required>
+    
+          <label for="email" class="contact-form__label">{{'contact.mensage' | translate:user}}</label>
+          <textarea name="message" class="input" required></textarea>
+          
+          <button type="submit" class="contact-form__send">Enviar</button>
+    
+          <input type="text" name="_gotcha" style="display:none" />
+          <!-- <input type="hidden" name="_next" value="https://orivelton.com.br"> -->
+        </form>
+    </div>
+  </div>
+</div>

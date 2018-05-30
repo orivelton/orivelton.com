@@ -1,0 +1,10 @@
+@import './../../../assets/scss/helper';
+
+.avatar {
+  text-align: center;
+  padding: em(20) 0 em(20) 0;
+  &__img {
+    border-radius: 50%;
+    margin: auto
+  }
+}

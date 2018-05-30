@@ -1,6 +1,16 @@
-@import './../../../assets/scss/helper.scss';
+@import './../../../assets/scss/helper';
 
 .menu {
   background: $midnight-express;
   height: vh(100);
+  padding-right: 0;
+  @media (max-width: 414px) {
+    height: auto;
+  }
+}
+
+.top-bar {
+  background: $picton-blue;
+  color: $white;
+  margin-bottom: em(20);
 }

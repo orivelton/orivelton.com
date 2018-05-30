@@ -1,0 +1,12 @@
+@import './../../../assets/scss/helper';
+
+.contact-form {
+  &__send {
+    border: 0;
+    background: $midnight-express;
+    color: $white;
+    padding: em(10) em(30);
+    font-weight: 700;
+    margin-top: em(20)
+  }
+}

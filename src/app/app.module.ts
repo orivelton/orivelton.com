@@ -17,13 +17,20 @@ import { LogoComponent } from './components/logo/logo.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { TranslateComponent } from './components/translate/translate.component';
 import { TemplateComponent } from './pages/template/template.component';
-import { StyleGuideComponent } from './pages/style-guide/style-guide.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProgressComponent } from './components/progress/progress.component';
+import { AvatarComponent } from './components/avatar/avatar.component';
+import { JobsComponent } from './components/jobs/jobs.component';
+import { FormComponent } from './components/form/form.component';
+import { AllSkillComponent } from './components/all-skill/all-skill.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  if (/.+\.\w\w.*/.test(window.location.href)) {
+    return new TranslateHttpLoader(http, '/orivelton.com/assets/i18n/', '.json');
+  } else {
+    return new TranslateHttpLoader(http);
+  }
 }
 
 @NgModule({
@@ -38,9 +45,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     MenuComponent,
     TranslateComponent,
     TemplateComponent,
-    StyleGuideComponent,
     NotFoundComponent,
-    ProgressComponent
+    ProgressComponent,
+    AvatarComponent,
+    JobsComponent,
+    FormComponent,
+    AllSkillComponent
   ],
   imports: [
     BrowserModule,

@@ -7,8 +7,38 @@
     "contact": "Contact",
     "styleGuide": "Style Guide"
   },
-  
+
+  "home" : {
+    "title": "Home",
+    "subTitle": "My Home"
+  },
+
   "skills" : {
-    "title": "Skill"
+    "title": "Skill",
+    "subTitle": "My Skills"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "subTitle": "My Projects"
+  },
+
+  "graduation": {
+    "title": "Graduation",
+    "subTitle": "My Graduations"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subTitle": "My Contact",
+    "name": "Name",
+    "email": "E-mail",
+    "mensage": "Your Mensage"
+  },
+
+  "a": {
+    "title": "Voe Gol e concorra a 100 Milhões de milhas Smiles",
+    "date": "Feb 2015 – Ago 2015",
+    "description": "Participação no projeto Voe Gol e concorra a 100 Milhões de milhas Smiles pela empresa e-Deploy, sendo responsável pelo front-end."
   }
 }

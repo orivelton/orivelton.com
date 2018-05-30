@@ -7,6 +7,7 @@ import { TranslateComponent } from '../translate/translate.component';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  public user:any;
   constructor() {}
   ngOnInit() {}
 }
