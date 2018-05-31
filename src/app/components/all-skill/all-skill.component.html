@@ -1,92 +1,26 @@
-<!-- <div class="message">
-  <p class="message-header">Basic</p>
-  <div class="message-body field is-grouped is-grouped-multiline">
-    <div class="control">
-      <div class="tags has-addons">
-        <span class="tag is-dark">HTML5</span>
-        <span class="tag is-info">99%</span>
-      </div>
-    </div>
-    <div class="control">
-      <div class="tags has-addons">
-        <span class="tag is-dark">CSS3</span>
-        <span class="tag is-info">99%</span>
-      </div>
-    </div>
-    <div class="control">
-      <div class="tags has-addons">
-        <span class="tag is-dark">Javascript</span>
-        <span class="tag is-info">99%</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="message">
-  <p class="message-header">Javascript</p>
-  <div class="message-body field is-grouped is-grouped-multiline">
-    <div class="control">
-      <div class="tags has-addons">
-        <i class="fab fa-angular"></i>
-        <span class="tag is-dark">
-          <i class="fab fa-angular"></i> Angular 2+</span>
-        <span class="tag is-info">90%</span>
-      </div>
-    </div>
-    <div class="control">
-      <div class="tags has-addons">
-        <span class="tag is-dark">AngularJs</span>
-        <span class="tag is-info">80%</span>
-      </div>
-    </div>
-    <div class="control">
-      <div class="tags has-addons">
-        <span class="tag is-dark">VueJS</span>
-        <span class="tag is-info">75%</span>
-      </div>
-    </div>
-    <div class="control">
-      <div class="tags has-addons">
-        <span class="tag is-dark">ES6</span>
-        <span class="tag is-info">80%</span>
-      </div>
+<div class="columns is-multiline is-centered">
+  <div class="column is-narrow is-one-third" *ngFor="let skills of skill">
+    <div class="box">
+      <article class="media">
+        <div class="media-left">
+          <figure class="image is-64x64">
+            <i class="fab fa-{{ skills.class }} fa-4x"></i>
+          </figure>
+        </div>
+        <div class="media-content">
+          <div class="content">
+            <strong class="is-half">{{ skills.name }}</strong>
+            <div class="columns is-gapless">
+              <div class="column is-four-fifths">
+                <progress class="progress is-large" value="{{ skills.percent }}" max="100">{{ skills.percent }}%</progress>
+              </div>
+              <strong class="column">
+                <span class="button is-rounded is-small">{{ skills.percent }} %</span>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </div>
-<div class="message">
-  <p class="message-header">CSS</p>
-  <div class="message-body field is-grouped is-grouped-multiline">
-    <div class="control">
-      <div class="tags has-addons">
-        <span class="tag is-dark">SASS</span>
-        <span class="tag is-info">99%</span>
-      </div>
-    </div>
-    <div class="control">
-      <div class="tags has-addons">
-        <span class="tag is-dark">LESS</span>
-        <span class="tag is-info">95%</span>
-      </div>
-    </div>
-    <div class="control">
-      <div class="tags has-addons">
-        <span class="tag is-dark">Stylus</span>
-        <span class="tag is-info">75%</span>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-<progress class="progress" value="15" max="100">15%</progress>
-
-<div class="columns">
-    <div class="column is-narrow">
-        <i class="fab fa-angular mdi"></i>
-    </div>
-    <div class="column">
-      <div class="box">
-        <p class="title is-5">Flexible column</p>
-        <p class="subtitle">This column will take up the remaining space available.</p>
-      </div>
-    </div>
-  </div>
