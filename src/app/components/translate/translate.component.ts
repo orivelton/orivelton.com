@@ -7,14 +7,20 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./translate.component.scss']
 })
 export class TranslateComponent implements OnInit {
+
+  selected: string;
+
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');
   }
 
   switchLanguage(language: string) {
     this.translate.use(language);
+    this.selected = language;
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.selected);
+  }
 
 }
