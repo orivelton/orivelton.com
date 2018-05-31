@@ -23,6 +23,8 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { FormComponent } from './components/form/form.component';
 import { AllSkillComponent } from './components/all-skill/all-skill.component';
+import { MyDescriptionComponent } from './components/my-description/my-description.component';
+import { SocialComponent } from './components/social/social.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -50,7 +52,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AvatarComponent,
     JobsComponent,
     FormComponent,
-    AllSkillComponent
+    AllSkillComponent,
+    MyDescriptionComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
