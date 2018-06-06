@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  public user:any;
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  public user: any;
+  constructor() {}
+  ngOnInit() {}
 }
