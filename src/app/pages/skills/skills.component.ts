@@ -2,14 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  templateUrl: './skills.component.html'
 })
 export class SkillsComponent implements OnInit {
-  public user:any;
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  public user: any;
+  constructor() {}
+  ngOnInit() {}
 }
