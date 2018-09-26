@@ -35,6 +35,8 @@ https://formspree.io
 
 ng build --prod --output-path=dist --base-href "https://orivelton.github.io/orivelton.com/" && ngh
 
+npm install -g angular-cli-ghpages
+
 ### links
   https://www.photopea.com/
 
