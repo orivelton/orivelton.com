@@ -3,14 +3,12 @@
     "home": "Home",
     "skils": "Skills",
     "projects": "Projects",
-    "graduation": "Graduation",
-    "contact": "Contact",
-    "styleGuide": "Style Guide"
+    "contact": "Contact"
   },
 
   "home" : {
     "title": "Home",
-    "subTitle": "My Home"
+    "subTitle": "About me"
   },
 
   "skills" : {
