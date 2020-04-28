@@ -4,9 +4,34 @@ body {
   font-family:  "Cutive Mono", 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 3rem;
 }
 
 
 * {margin: 0; padding: 0;}
 ul li { list-style: none;}
 a { text-decoration: none;}
+
+:root {
+  --black: #000000;
+  --alice-blue: #EDF2F7;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+hr.styled {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
