@@ -7,9 +7,21 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__link {
     padding: 15px;
+    color: var(--black);
+    font-weight: bold;
+    &:hover {
+      transition: background-color 0.5s ease;
+      background: var(--alice-blue);
+      border-radius: 4px;;
+    }
+  }
+
+  &__group {
+    display: flex;
   }
 }
