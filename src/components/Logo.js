@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from "gatsby";
 
 const Logo = () => (
   <Link to="/" className="nav__link" title="Go to Home">⌂</Link>

@@ -3,7 +3,7 @@ module.exports = {
     title: `Orivelton Cesar`,
     author: {
       name: `Orivelton Cesar`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `Front End Developer`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://orivelton.com`,
@@ -70,12 +70,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
