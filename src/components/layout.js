@@ -33,12 +33,12 @@ const Layout = ({ location, title, children }) => {
       </header>
       <div className="content">
         <main>{children}</main>
-        <footer>
-          ©  <a href="https://orivelton.com">Orivelton Cesar</a>
-          {` `}
-          {new Date().getFullYear()}
-        </footer>
       </div>
+      <footer>
+        ©  <a href="https://orivelton.com">Orivelton Cesar</a>
+        {` `}
+        {new Date().getFullYear()}
+      </footer>
     </>
   )
 }
