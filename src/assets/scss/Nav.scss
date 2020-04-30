@@ -19,12 +19,28 @@
   &__link {
     padding: 15px;
     color: var(--black);
-    font-weight: bold;
+    font-weight: 500;
     box-shadow: none;
     &:hover {
       transition: background-color 0.5s ease;
       background: var(--alice-blue);
       border-radius: 4px;;
+    }
+    
+    &--active {
+      font-weight: bold;
+      position: relative;
+      &::before {
+        content: '';
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid black;
+        position: absolute;
+        bottom: -1px;
+        left: 43%;
+      }
     }
   }
 

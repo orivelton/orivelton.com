@@ -9,13 +9,13 @@ const Nav = () => (
         <Logo />
         <ul className="nav__group">
           <li>
-            <Link to="/blog" className="nav__link" title="Got to Blog page">Blog</Link>
+            <Link to="/blog" className="nav__link" activeClassName='nav__link--active' title="Got to Blog page">Blog</Link>
           </li>
           {/* <li>
             <Link to="/time-line" className="nav__link" title="Got to Time Line page">Time Line</Link>
           </li> */}
           <li>
-            <Link to="/contact" className="nav__link" title="Got to Contact page">Contact</Link>
+            <Link to="/contact" className="nav__link" activeClassName='nav__link--active' title="Got to Contact page">Contact</Link>
           </li>
         </ul>
     </div>

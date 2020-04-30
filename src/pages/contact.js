@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Layout from '../components/layout';
 import { graphql } from "gatsby";
+import '../assets/scss/Contact.scss';
 import { post } from 'axios';
 
 
@@ -13,7 +14,6 @@ const Contact = ({ data, location }) => {
 
   const handleForm = async (e) => {
     e.preventDefault();
-
     const sendEmail = await post(
       "https://formspree.io/xdownpwk",
       {name, email, message},
@@ -29,10 +29,11 @@ const Contact = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <form onSubmit={handleForm}>
+      <form onSubmit={handleForm} className="form">
         <label for="name">Name:</label>
         <input
           id="name"
+          className="form__input"
           type="text"
           name="name"
           value={name}
@@ -43,6 +44,7 @@ const Contact = ({ data, location }) => {
         <label for="email">Email:</label>
         <input
           id="email"
+          className="form__input"
           type="email"
           name="email"
           value={email}
@@ -51,15 +53,16 @@ const Contact = ({ data, location }) => {
         />
 
         <label for="message">Message:</label>
-        <input
+        <textarea
           id="message"
+          className="form__input form__textarea"
           type="text"
           name="message"
           value={message}
           onChange={({target: {value}}) => setMessage(value)}
           required
         />
-        <button>Send</button>
+        <button className="form__button">Send</button>
       </form>
       
       {
