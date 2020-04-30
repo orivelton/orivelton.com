@@ -2,26 +2,60 @@
   position: fixed;
   top: 0;
   width: 100%;
+  
+  &__group {
+    display: flex;
+    margin: 0;
+  }
 
   &__menu {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--white);
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
 
   &__link {
     padding: 15px;
     color: var(--black);
-    font-weight: bold;
+    font-weight: 500;
+    box-shadow: none;
     &:hover {
-      transition: background-color 0.5s ease;
-      background: var(--alice-blue);
-      border-radius: 4px;;
+      font-weight: bold;
+    }
+
+    &:last-child {
+      padding-right: 0;;
+    }
+    
+    &--active {
+      font-weight: bold;
+      position: relative;
+      &::before {
+        content: '';
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid black;
+        position: absolute;
+        bottom: -7px;
+        left: 43%;
+      }
+    }
+
+    &--logo {
+      padding: 0.3rem 0;
     }
   }
 
-  &__group {
-    display: flex;
-  }
+}
+
+.logo {
+  width: 3rem;
 }
