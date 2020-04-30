@@ -6,10 +6,10 @@ module.exports = {
       name: `Orivelton Cesar`,
       summary: `Front End Developer`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Orivelton Cesar - Front End Developer - Javascript - HTML - CSS - React - Angular.`,
     siteUrl: `https://orivelton.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `orivelton`,
     },
   },
   plugins: [
