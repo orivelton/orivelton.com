@@ -30,7 +30,7 @@ const Contact = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <form onSubmit={handleForm} className="form">
-        <label for="name">Name:</label>
+        <label htmlFor="name">Name:</label>
         <input
           id="name"
           className="form__input"
@@ -41,7 +41,7 @@ const Contact = ({ data, location }) => {
           required 
         />
 
-        <label for="email">Email:</label>
+        <label htmlFor="email">Email:</label>
         <input
           id="email"
           className="form__input"
@@ -52,7 +52,7 @@ const Contact = ({ data, location }) => {
           required
         />
 
-        <label for="message">Message:</label>
+        <label htmlFor="message">Message:</label>
         <textarea
           id="message"
           className="form__input form__textarea"
