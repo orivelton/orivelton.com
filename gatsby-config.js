@@ -21,6 +21,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://orivelton.com`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
@@ -82,7 +88,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`, 
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-offline',
       options: {
