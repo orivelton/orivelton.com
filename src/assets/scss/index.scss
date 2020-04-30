@@ -8,7 +8,7 @@ body {
 h1 {font-family: 'Source Code Pro', monospace;}
 
 
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
 ul li { list-style: none;}
 a { text-decoration: none;}
 
