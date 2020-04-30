@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Layout from '../components/layout';
-import { graphql } from "gatsby";
+import { graphql } from 'gatsby';
 import '../assets/scss/Contact.scss';
 import { post } from 'axios';
 

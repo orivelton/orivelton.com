@@ -5,7 +5,6 @@ import Nav from "./Nav";
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   let header;
-  console.log(location.pathname);
 
   if (location.pathname === rootPath) {
     header = (

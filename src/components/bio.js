@@ -48,6 +48,7 @@ const Bio = () => {
       <p>
         <strong>{author.name}</strong> {author.summary}
       </p>
+      <p>{social}</p>
     </div>
   )
 }
