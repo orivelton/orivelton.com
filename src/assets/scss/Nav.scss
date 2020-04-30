@@ -29,8 +29,8 @@
       font-weight: bold;
     }
 
-    &:last-child {
-      padding-right: 0;;
+    &:nth-last-child(2) {
+      padding-right: 0;
     }
     
     &--active {

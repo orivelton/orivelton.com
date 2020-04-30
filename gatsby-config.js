@@ -7,7 +7,7 @@ module.exports = {
       summary: `Front End Developer`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://orivelton.com`,
+    siteUrl: `/`,
     social: {
       twitter: `kylemathews`,
     },
