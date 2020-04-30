@@ -35,7 +35,7 @@ const Layout = ({ location, title, children }) => {
         <main>{children}</main>
       </div>
       <footer>
-        ©  <a href="https://orivelton.com">Orivelton Cesar</a>
+        ©  <a href="/">Orivelton Cesar</a>
         {` `}
         {new Date().getFullYear()}
       </footer>

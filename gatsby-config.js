@@ -6,10 +6,10 @@ module.exports = {
       name: `Orivelton Cesar`,
       summary: `Front End Developer`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Orivelton Cesar - Front End Developer - Javascript - HTML - CSS - React - Angular.`,
     siteUrl: `https://orivelton.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `orivelton`,
     },
   },
   plugins: [
@@ -18,6 +18,23 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://orivelton.com`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Source Code Pro`,
+            variants: [`200`,`300`,`400`,`500`,`600`,`700`,`900`,`200`,`300`,`400`,`500`,`600`,`700`,`900`]
+          }
+        ],
       },
     },
     {
@@ -61,19 +78,25 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Orivelton Cesar - Front End`,
+        short_name: `Orivelton`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/orivelton-icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+         workboxConfig: {
+            globPatterns: ['**/*']
+         }
+      }
+   }
   ],
 }

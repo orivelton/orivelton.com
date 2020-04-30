@@ -10,7 +10,7 @@ const Blog = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
 
-      <div className="content">
+      <div>
         {
           posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
