@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 import '../assets/scss/Contact.scss';
 import { post } from 'axios';
+import config from '../../configs/config';
+const {urlEmail} = config;
 
 
 const Contact = ({ data, location }) => {
@@ -15,7 +17,7 @@ const Contact = ({ data, location }) => {
   const handleForm = async (e) => {
     e.preventDefault();
     const sendEmail = await post(
-      "https://formspree.io/xdownpwk",
+      urlEmail,
       {name, email, message},
       {headers: {"Accept": "application/json"}}
     ).catch(function (error) {
@@ -26,6 +28,14 @@ const Contact = ({ data, location }) => {
 
     status === 200 ? setResponse(true) : setResponse(false);
   };
+
+  useEffect(() => {
+    if(response) {
+      setEmail('');
+      setName('');
+      setMessage('');
+    }
+  }, [response])
 
   return (
     <Layout location={location} title={siteTitle}>
