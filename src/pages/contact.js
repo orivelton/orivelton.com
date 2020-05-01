@@ -35,7 +35,7 @@ const Contact = ({ data, location }) => {
       setName('');
       setMessage('');
     }
-  }, [response])
+  }, [response]);
 
   return (
     <Layout location={location} title={siteTitle}>
