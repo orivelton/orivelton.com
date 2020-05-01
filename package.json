@@ -55,6 +55,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d build"
+    "deploy": "gatsby build && gh-pages -d public"
   }
 }
