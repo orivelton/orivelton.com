@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-// import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -31,9 +30,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr/>
-        {/* <footer>
-          <Bio />
-        </footer> */}
       </article>
 
       <nav>
@@ -47,14 +43,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         >
           <li>
-            {previous && (
+            { previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
-            {next && (
+            { next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>

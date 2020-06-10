@@ -1,7 +1,7 @@
 {
   "name": "orivelton.com",
   "private": true,
-  "description": "orivelton.com blog",
+  "description": "orivelton.com",
   "version": "0.1.0",
   "dependencies": {
     "axios": "^0.19.2",
@@ -40,7 +40,8 @@
   },
   "homepage": "http://orivelton.com",
   "keywords": [
-    "gatsby"
+    "orivelton.com",
+    "orivelton"
   ],
   "license": "MIT",
   "main": "n/a",

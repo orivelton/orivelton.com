@@ -39,6 +39,7 @@ const Contact = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <h1 className="title-page">Get In Touch</h1>
       <form onSubmit={handleForm} className="form">
         <label htmlFor="name">Name:</label>
         <input

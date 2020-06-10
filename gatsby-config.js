@@ -6,7 +6,7 @@ module.exports = {
       name: `Orivelton Cesar`,
       summary: `Front End Developer`,
     },
-    description: `Orivelton Cesar - Front End Developer - Javascript - HTML - CSS - React - Angular.`,
+    description: `Orivelton Cesar - Front End Developer - Javascript - HTML - CSS - SCSS - React - Angular`,
     siteUrl: `https://orivelton.com`,
     social: {
       twitter: `orivelton`,

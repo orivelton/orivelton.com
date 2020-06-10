@@ -1,30 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import Nav from "./Nav";
+import React from 'react';
+import Nav from './Nav';
+import Footer from './Footer';
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`;
-  let header;
-
-  if (location.pathname === rootPath) {
-    header = (
-      <Nav />
-    )
-  } else {
-    header = (
-      <h3>
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+const Layout = ({ children }) => {
   return (
     <>
       <header>
@@ -33,11 +11,7 @@ const Layout = ({ location, title, children }) => {
       <div className="content">
         <main>{children}</main>
       </div>
-      <footer>
-        ©  <a href="/">Orivelton Cesar</a>
-        {` `}
-        {new Date().getFullYear()}
-      </footer>
+      <Footer />
     </>
   )
 }
