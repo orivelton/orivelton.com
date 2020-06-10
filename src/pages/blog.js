@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 // import SEO from "../components/seo";
 
 const Blog = ({ data, location }) => {
@@ -30,6 +31,7 @@ const Blog = ({ data, location }) => {
                     }}
                     />
                 </section>
+                <SEO title={title} description={{ __html: node.frontmatter.description || node.excerpt, }}/>
               </article>
               <br /> <hr /> <br />
             </div>
