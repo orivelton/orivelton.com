@@ -1,6 +1,6 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import Layout from "../components/layout";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Layout from '../components/layout';
 // import SEO from "../components/seo";
 
 const Blog = ({ data, location }) => {
@@ -13,8 +13,8 @@ const Blog = ({ data, location }) => {
         posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <>
-              <article key={node.fields.slug}>
+            <div key={node.fields.slug}>
+              <article>
                 <header>
                   <h3>
                     <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
@@ -32,7 +32,7 @@ const Blog = ({ data, location }) => {
                 </section>
               </article>
               <br /> <hr /> <br />
-            </>
+            </div>
           )
         })
       }
