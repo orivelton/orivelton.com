@@ -31,7 +31,7 @@ const Blog = ({ data, location }) => {
                     }}
                     />
                 </section>
-                <SEO title={title} description={{ __html: node.frontmatter.description || node.excerpt, }}/>
+                <SEO title={title}/>
               </article>
               <br /> <hr /> <br />
             </div>
