@@ -4,8 +4,9 @@ import { graphql } from 'gatsby';
 import '../assets/scss/Contact.scss';
 import { post } from 'axios';
 import config from '../../configs/config';
-const {urlEmail} = config;
+import ReCAPTCHA from 'react-google-recaptcha'
 
+const { urlEmail } = config;
 
 const Contact = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -13,6 +14,7 @@ const Contact = ({ data, location }) => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [response, setResponse] = useState(false);
+  const [submit, setSubmit] = useState(false)
 
   const handleForm = async (e) => {
     e.preventDefault();
@@ -28,6 +30,10 @@ const Contact = ({ data, location }) => {
 
     status === 200 ? setResponse(true) : setResponse(false);
   };
+
+  const handleCaptchaResponseChange = (resp) => {
+    resp && setSubmit(true);
+  }
 
   useEffect(() => {
     if(response) {
@@ -73,7 +79,13 @@ const Contact = ({ data, location }) => {
           onChange={({target: {value}}) => setMessage(value)}
           required
         />
-        <button className="form__button">Send</button>
+        <ReCAPTCHA
+          sitekey="6LfEW6YZAAAAAD_uRZm_zBZWdyvjQ-WW6XeLiBr1"
+          onChange={handleCaptchaResponseChange}
+        />
+        {
+          submit && <button className="form__button">Send</button>
+        }
       </form>
       
       {
