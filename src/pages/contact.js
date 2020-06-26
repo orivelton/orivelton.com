@@ -15,7 +15,7 @@ const Contact = ({ data, location }) => {
     email: '',
     message: '',
     submit: false,
-    response: false
+    showForm: true
   });
 
   const handleForm = async (e) => {
@@ -30,10 +30,10 @@ const Contact = ({ data, location }) => {
       console.log(error);
     });
     
-    sendEmail.status === 200 && setForm({...form, response: true });
+    sendEmail.status === 200 && setForm({...form, showForm: false });
   };
 
-  const handleCaptchaResponseChange = resp => {
+  const handleReCaptcha = resp => {
     setForm({...form, submit: !!resp});
   }
 
@@ -48,7 +48,7 @@ const Contact = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <h1 className="title-page">Get In Touch</h1>
       {
-        !form.response ? (
+        form.showForm ? (
           <form onSubmit={handleForm} className="form">
             <label htmlFor="name">Name:</label>
             <input
@@ -84,7 +84,7 @@ const Contact = ({ data, location }) => {
             />
             <ReCAPTCHA
               sitekey="6LfEW6YZAAAAAD_uRZm_zBZWdyvjQ-WW6XeLiBr1"
-              onChange={handleCaptchaResponseChange}
+              onChange={handleReCaptcha}
             />
             {
               form.submit && <button className="form__button">Send</button>

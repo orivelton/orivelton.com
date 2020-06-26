@@ -1,7 +1,7 @@
-import React from "react"
-import Logo from "./Logo";
+import React from 'react'
+import Logo from './Logo';
 import '../assets/scss/Nav.scss';
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
 const Nav = () => (
   <nav className="nav">
