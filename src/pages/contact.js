@@ -6,6 +6,7 @@ import { post } from 'axios';
 import '../assets/scss/Contact.scss';
 
 import config from '../../configs/config';
+import SuccessForm from '../components/SuccessForm';
 const { urlEmail } = config;
 
 const Contact = ({ data, location }) => {
@@ -91,7 +92,7 @@ const Contact = ({ data, location }) => {
             }
           </form>
         ) : (
-          <p>Thanks for sending me a message! I'll send you a response soon.</p>
+          <SuccessForm />
         )
       }
     </Layout>
