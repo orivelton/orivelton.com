@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/scss/Name.scss';
 import Social from '../components/Social';
-import SEO from './seo';
+import SEO from './Seo';
 
 const Name = () => {
   return (

@@ -1,9 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/Layout';
+import SEO from '../components/Seo';
 import Name from '../components/Name';
+
 import '../assets/scss/index.scss';
 
 const Index = ({ data, location }) => {

@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
   
   &__group {
     display: flex;
@@ -28,7 +29,7 @@
       font-weight: bold;
     }
 
-    &:nth-last-child(2) {
+    &--no-padding-right {
       padding-right: 0;
     }
     
@@ -58,3 +59,5 @@
 .logo {
   width: 3rem;
 }
+
+
