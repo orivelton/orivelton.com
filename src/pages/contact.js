@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 import ReCAPTCHA from 'react-google-recaptcha'
 import { post } from 'axios';

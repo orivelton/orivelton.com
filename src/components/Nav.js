@@ -12,7 +12,7 @@ const Nav = () => (
             <Link to="/blog" className="nav__link" activeClassName='nav__link--active' title="Got to Blog page">Blog</Link>
           </li>
           <li>
-            <Link to="/contact" className="nav__link" activeClassName='nav__link--active' title="Got to Contact page">Contact</Link>
+            <Link to="/contact" className="nav__link nav__link--no-padding-right" activeClassName='nav__link--active' title="Got to Contact page">Contact</Link>
           </li>
         </ul>
     </div>
