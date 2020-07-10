@@ -25,7 +25,7 @@ const Plans = ({ data, location }) => {
 
               <li className="pricing-features-item">SEO</li>
             </ul>
-            <span className="pricing-price">R$ 59,90/mês <br /> ou <br />659,89/ano</span>
+            <span className="pricing-price">R$ 59,90/mês <br /> ou <br />R$ 659,89/ano</span>
             <strong>
               <Link to="/contact" className="pricing-button is-featured" title="Got to Blog page">Solicitar</Link>
             </strong>
@@ -42,7 +42,7 @@ const Plans = ({ data, location }) => {
 
               <li className="pricing-features-item">SEO</li>
             </ul>
-            <span className="pricing-price">R$ 89,90/mês <br /> ou <br />988,90/ano</span>
+            <span className="pricing-price">R$ 89,90/mês <br /> ou <br />R$ 988,90/ano</span>
             <strong>
               <Link to="/contact" className="pricing-button is-featured" title="Got to Blog page">Solicitar</Link>
             </strong>
