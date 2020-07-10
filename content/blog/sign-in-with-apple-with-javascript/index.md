@@ -6,6 +6,8 @@ description: "Sign In Apple with Javascript"
  
 # Sign In Apple with Javascript
 
+![Sign In Apple with Javascript](./apple.png)
+
 <br />
 Sign in with Apple provides a fast, private way to sign into apps and websites, giving people a consistent experience they can trust and the convenience of not having to remember multiple accounts and passwords.
 <br />
@@ -42,7 +44,7 @@ Sign in with Apple provides a fast, private way to sign into apps and websites, 
 <div id="appleid-signin" data-color="black" data-border="true" data-type="sign in"></div>
 ```
 
-![alt text](https://apple.co/3e9xDJX "Buttom Sign In with Apple")
+![Buttom Sign In with Apple](https://apple.co/3e9xDJX "Buttom Sign In with Apple")
 <br />
 <br />
 
