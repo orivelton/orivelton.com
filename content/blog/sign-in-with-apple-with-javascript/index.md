@@ -1,10 +1,10 @@
 ---
-title: Sign In with Apple with Javascript [EN]
+title: Sign In Apple with Javascript [EN]
 date: "2020-07-10T22:12:03.284Z"
-description: "Sign In with Apple with Javascript"
+description: "Sign In Apple with Javascript"
 ---
  
-# Sign In with Apple with Javascript
+# Sign In Apple with Javascript
 
 <br />
 Sign in with Apple provides a fast, private way to sign into apps and websites, giving people a consistent experience they can trust and the convenience of not having to remember multiple accounts and passwords.
