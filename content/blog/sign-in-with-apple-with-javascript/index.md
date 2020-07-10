@@ -53,21 +53,26 @@ Sign in with Apple provides a fast, private way to sign into apps and websites, 
 
 The HTTP body contains the result parameters with a content-type of application/x-www-form-urlencoded. A successful response contains the following parameters:
 
-> code
+<br />
 
+### code
 A single-use authentication code that is valid for five minutes.
 
-> id_token
+<br />
 
+### id_token
 A JSON web token containing the user’s identify information.
 
-> state
+<br />
 
+### state
 The state passed by the init function.
 
-> user
+<br />
 
-A JSON string containing the data requested in the scope property. The returned data is in the following format: 
+### user
+A JSON string containing the data requested in the scope property. The returned data is in the following format:
+
 ```json
 { "name": { "firstName": string, "lastName": string }, "email": string }
 ```
