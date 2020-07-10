@@ -1,7 +1,16 @@
-.name {
+.home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10rem 1rem;
+}
+
+.description {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.name {
+  font-size: 3rem;
 }
