@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/Nav.js renders correctly 1`] = `
+<nav
+  className="nav"
+>
+  <div
+    className="nav__menu"
+  >
+    <a
+      className="nav__link nav__link--logo"
+      href="/"
+      title="Go to Home"
+    >
+      <img
+        alt="Logo Orivelton Cesar"
+        className="logo"
+        src="test-file-stub"
+      />
+    </a>
+    <ul
+      className="nav__group"
+    >
+      <li>
+        <a
+          className="nav__link"
+          href="/blog"
+          title="Got to Blog page"
+        >
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav__link nav__link--no-padding-right"
+          href="/contact"
+          title="Got to Contact page"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+  <hr />
+</nav>
+`;

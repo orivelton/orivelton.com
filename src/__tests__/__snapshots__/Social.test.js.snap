@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/Social.js renders correctly 1`] = `
+<ul
+  className="social"
+>
+  <li>
+    <a
+      className="icon icon-linkedin"
+      href="https://www.linkedin.com/in/orivelton/"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Got to Linkedin"
+    >
+      <span
+        className="icon__name"
+      >
+        Linkedin
+      </span>
+    </a>
+  </li>
+  <li>
+    <a
+      className="icon icon-github"
+      href="https://github.com/orivelton"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Got to GitHub"
+    >
+      <span
+        className="icon__name"
+      >
+        GitHub
+      </span>
+    </a>
+  </li>
+  <li>
+    <a
+      className="icon icon-twitter"
+      href="https://twitter.com/orivelton_cesar"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Got to Twitter"
+    >
+      <span
+        className="icon__name"
+      >
+        Twitter
+      </span>
+    </a>
+  </li>
+</ul>
+`;
