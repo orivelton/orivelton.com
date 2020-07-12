@@ -5,10 +5,9 @@ body {
   padding-top: 3rem;
 }
 
-h1 {font-family: 'Source Code Pro', monospace; }
+h1 { font-family: 'Source Code Pro', monospace; }
 
-
-* {margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 ul li { list-style: none; }
 a { text-decoration: none; }
 
@@ -20,6 +19,8 @@ a { text-decoration: none; }
   --cornflower-blue-ff: #60a9ff;
   --alice-blue: #E1F1FF;
   --dodger-blue: #016FF9;
+  --night-rider: #333333;
+  --very-light-grey: #CCCCCC;
 }
 
 .content {
@@ -38,14 +39,13 @@ footer {
 hr {
   border: 0;
   height: 1px;
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
-
-hr.styled {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background: var(--night-rider);
+  background-image: linear-gradient(to right, var(--very-light-grey), var(--night-rider), var(--very-light-grey));
+  &.styled {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }  
 }
 
 .title-page {
