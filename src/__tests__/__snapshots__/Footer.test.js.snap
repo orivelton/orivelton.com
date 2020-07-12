@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders correctly 1`] = `
+exports[`src/components/Footer.js renders correctly 1`] = `
 <footer>
   © 
    
