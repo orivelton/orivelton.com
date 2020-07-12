@@ -6,11 +6,11 @@
 
 .background::after {
   content: '';
-  background: --cornflower-blue-ff;
-  background: -moz-linear-gradient(top, --cornflower-blue-ff 0%, --cornflower-blue 100%);
-  background: -webkit-linear-gradient(top, --cornflower-blue-ff 0%, --cornflower-blue 100%);
-  background: linear-gradient(to bottom, --cornflower-blue-ff 0%, --cornflower-blue 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='--cornflower-blue-ff', endColorstr='--cornflower-blue',GradientType=0 );
+  background: var(--cornflower-blue-ff);
+  background: -moz-linear-gradient(top, var(--cornflower-blue-ff) 0%, var(--cornflower-blue) 100%);
+  background: -webkit-linear-gradient(top, var(--cornflower-blue-ff) 0%, var(--cornflower-blue) 100%);
+  background: linear-gradient(to bottom, var(--cornflower-blue-ff) 0%, var(--cornflower-blue) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cornflower-blue-ff)', endColorstr='var(--cornflower-blue)',GradientType=0 );
   height: 350px;
   left: 0;
   position: absolute;
@@ -27,7 +27,7 @@
 }
 
 .panel {
-  background-color: --white;
+  background-color: var(--white);
   border-radius: 10px;
   padding: 15px 25px;
   position: relative;
@@ -47,7 +47,7 @@
   }
 
   &-plan {
-    border-bottom: 1px solid --alice-blue;
+    border-bottom: 1px solid var(--alice-blue);
     padding: 25px;
     &:last-child {
       border-bottom: none;
@@ -66,14 +66,14 @@
   }
 
   &-features {
-    color: --dodger-blue;
+    color: var(--dodger-blue);
     font-weight: 600;
     letter-spacing: 1px;
     margin: 50px 0 25px;
   }
 
   &-features-item {
-    border-top: 1px solid --alice-blue;
+    border-top: 1px solid var(--alice-blue);
     font-size: 12px;
     line-height: 1.5;
     padding: 15px 0;
@@ -81,12 +81,12 @@
 
   &-features-item {
     &:last-child {
-      border-bottom: 1px solid --alice-blue;
+      border-bottom: 1px solid var(--alice-blue);
     }
   }
 
   &-price {
-    color: --dodger-blue;
+    color: var(--dodger-blue);
     display: block;
     font-size: 32px;
     font-weight: 700;
@@ -104,7 +104,7 @@
 
     &:focus,
     &:hover {
-      background-color: --alice-blue;
+      background-color: var(--alice-blue);
     }
 
     &.is-featured {
@@ -133,7 +133,7 @@
 
     &-plan {
       border-bottom: none;
-      border-right: 1px solid --alice-blue;
+      border-right: 1px solid var(--alice-blue);
       flex-basis: 100%;
       padding: 25px 50px;
       &:last-child {
