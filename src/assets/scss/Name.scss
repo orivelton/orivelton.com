@@ -4,6 +4,11 @@
   justify-content: center;
   align-items: center;
   padding: 10rem 1rem;
+
+  @media (max-width: 768px) {
+    padding-top: 3rem;
+    text-align: center;
+  }
 }
 
 .description {
