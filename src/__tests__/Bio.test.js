@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Footer from '../components/Footer';
+import Bio from '../components/Bio';
 
-describe('src/components/Footer.js', () => {
+describe('src/components/Bio.js', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Footer />)
+      .create(<Bio />)
       .toJSON()
     expect(tree).toMatchSnapshot();
   });
