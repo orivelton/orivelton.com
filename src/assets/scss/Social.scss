@@ -38,12 +38,16 @@
   }
 }
 
-.icon-twitter:before {
-  content: "\e900";
-}
-.icon-github:before {
-  content: "\e901";
-}
-.icon-linkedin:before {
-  content: "\e902";
+.icon {
+  &-twitter:before {
+    content: "\e900";
+  }
+
+  &-github:before {
+    content: "\e901";
+  }
+
+  &-linkedin:before {
+    content: "\e902";
+  }
 }

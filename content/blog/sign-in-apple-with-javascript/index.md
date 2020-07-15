@@ -1,5 +1,5 @@
 ---
-title: Sign In Apple with Javascript [EN]
+title: Sign In Apple with Javascript
 date: "2020-07-10T22:12:03.284Z"
 description: "Sign In Apple with Javascript"
 ---

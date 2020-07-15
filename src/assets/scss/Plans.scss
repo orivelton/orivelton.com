@@ -109,7 +109,7 @@
 
     &.is-featured {
       background-color: #48aaff;
-      color: #fff;
+      color: var(--white);
 
       &:active,
       &:hover {

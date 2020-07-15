@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.svg'
 
 const Logo = () => (
   <Link to="/" className="nav__link nav__link--logo" title="Go to Home">
-    <img className="logo" src={logo} alt="Logo Orivelton Cesar"/>
+    <img className="logo" src={logo} alt="Logo Orivelton Cesar" title="Logo Orivelton Cesar"/>
   </Link>
 )
 
