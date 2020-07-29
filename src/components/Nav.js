@@ -9,10 +9,10 @@ const Nav = () => (
         <Logo />
         <ul className="nav__group">
           <li>
-            <Link to="/blog" className="nav__link" activeClassName='nav__link--active' title="Got to Blog page">Blog</Link>
+            <Link to="/projects" className="nav__link" activeClassName='nav__link--active' title="Got to Projects page">Projects</Link>
           </li>
           <li>
-            <Link to="/projects" className="nav__link" activeClassName='nav__link--active' title="Got to Projects page">Projects</Link>
+            <Link to="/blog" className="nav__link" activeClassName='nav__link--active' title="Got to Blog page">Blog</Link>
           </li>
           <li>
             <Link to="/contact" className="nav__link nav__link--no-padding-right" activeClassName='nav__link--active' title="Got to Contact page">Contact</Link>
