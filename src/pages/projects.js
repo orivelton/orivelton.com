@@ -30,7 +30,7 @@ const Projects = ({ data, location }) => {
         {
           repos.map(({ id, html_url: htmlUrl, name, description, language }) => (
             <li key={id}>
-              <a href={htmlUrl} className="github-card" target="_blank" title={description} rel="noreferrer">
+              <a href={htmlUrl} className="github-card" target="_blank" title={description} rel="noopener noreferrer">
                 <h3>{name}</h3>
                 <p>{description}</p>
                 <span className="github-card__meta">
