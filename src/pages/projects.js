@@ -9,21 +9,17 @@ import Layout from '../components/Layout';
 
 const Projects = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
-
   const [repos, setRepos] = useState([]);
  
   useEffect( () => {
     const result = async () => {
       const { data: repositories } = await axios('https://api.github.com/users/orivelton/repos?per_page=12');
-      console.log(repositories);
       setRepos(repositories);
     }
 
     result();
   }, []);
-
-
-
+  
   return (
     <Layout location={location} title={siteTitle}>
       <ul className="github-cards">
