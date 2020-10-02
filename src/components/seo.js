@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const SEO = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
@@ -15,9 +15,9 @@ const SEO = ({ description, lang, meta, title }) => {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
@@ -50,7 +50,7 @@ const SEO = ({ description, lang, meta, title }) => {
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: ['react', 'angular', 'html', 'css', 'scss', 'Orivelton'],
+  meta: [{}],
   description: `Orivelton Cesar - Front End developer, Javascript, HTML, CSS, SCSS, Angular, React`,
 }
 
@@ -61,4 +61,4 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-export default SEO
+export default SEO;
