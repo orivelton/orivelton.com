@@ -4,9 +4,7 @@ import Logo from './Logo'
 
 const Links = ['Projects', 'Blog', 'Contact']
 
-
 export default function Nav() {
-
   return (
     <>
       <Box px={4}>

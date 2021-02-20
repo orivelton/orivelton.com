@@ -1,10 +1,12 @@
 import { Flex } from '@chakra-ui/react'
 import CtaPrimary from '../components/CtaPrimary'
+import PreviewBlog from '../components/PreviewBlog'
 
 const Index = () => (
   <>
-    <Flex>
+    <Flex flexDirection="column">
       <CtaPrimary />
+      <PreviewBlog />
     </Flex>
   </>
 )
