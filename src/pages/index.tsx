@@ -1,10 +1,12 @@
 import { Flex } from '@chakra-ui/react'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
+import CtaPrimary from '../components/CtaPrimary'
 
 const Index = () => (
-  <Flex>
-    <DarkModeSwitch />
-  </Flex>
+  <>
+    <Flex>
+      <CtaPrimary />
+    </Flex>
+  </>
 )
 
 export default Index
