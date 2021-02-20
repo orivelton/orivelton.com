@@ -8,8 +8,10 @@ import Nav from '../components/Nav'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Nav />
-      <Component {...pageProps} />
+      <div style={{minHeight: '82vh'}}>
+        <Nav />
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </ChakraProvider>
   )

@@ -2,7 +2,7 @@ import { Box, Flex, HStack, Link } from '@chakra-ui/react'
 import { DarkModeSwitch } from './DarkModeSwitch'
 import Logo from './Logo'
 
-const Links = ['Dashboard', 'Projects', 'Team']
+const Links = ['Projects', 'Blog', 'Contact']
 
 
 export default function Nav() {
