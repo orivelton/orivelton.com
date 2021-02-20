@@ -1,4 +1,5 @@
-import { Box, Flex, HStack, Link } from '@chakra-ui/react'
+import { Box, Flex, HStack} from '@chakra-ui/react'
+import Link from 'next/link'
 import { DarkModeSwitch } from './DarkModeSwitch'
 import Logo from './Logo'
 
@@ -23,7 +24,9 @@ export default function Nav() {
                   py={1}
                   rounded={'md'}
                   _hover={{ textDecoration: 'none', bg: 'gray.200' }}
-                  href={'#'}>
+                  href={`/${link.toLowerCase()}`}
+                  title={`Go to ${link}`}
+                >
                   {link}
                 </Link>
               ))}
