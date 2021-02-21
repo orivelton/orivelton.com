@@ -1,4 +1,4 @@
-import { Box, Container, Heading, SimpleGrid, Text, Stack, HStack, VStack, Flex } from '@chakra-ui/react'
+import { Box, Container, Heading, Text, Stack, HStack, VStack, Flex, Divider } from '@chakra-ui/react'
 import { Post } from '../interfaces/Post'
 
 export default function PreviewBlog({ posts }: any) {
@@ -20,7 +20,8 @@ export default function PreviewBlog({ posts }: any) {
             </HStack>
           ))}
         </Flex>
-      </Container>
+      </Container >
+      <Divider mt={10} mb={2}/>
     </Box>
   )
 }

@@ -1,4 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, Divider } from '@chakra-ui/react'
 
 import theme from '../theme'
 import { AppProps } from 'next/app'
@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChakraProvider resetCSS theme={theme}>
       <div style={{minHeight: '82vh'}}>
         <Nav />
+        <Divider />
         <Component {...pageProps} />
       </div>
       <Footer />
