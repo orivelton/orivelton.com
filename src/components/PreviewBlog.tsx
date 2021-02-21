@@ -9,7 +9,7 @@ export default function PreviewBlog({ posts }: any) {
       </Stack>
 
       <Container maxW={'6xl'} mt={10}>
-        <Flex columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
+        <Flex spacing={10}>
           {posts.length && posts.map(({ id, title, content, updatedAt } :Post) => (
             <HStack key={id}>
               <VStack align={'start'}>
