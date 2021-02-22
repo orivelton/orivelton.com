@@ -8,20 +8,18 @@ export default function PreviewBlog({ posts }: any) {
         <Heading fontSize={'3xl'}>Latest posts</Heading>
       </Stack>
 
-      <Container maxW={'6xl'} mt={10}>
-        <Flex spacing={10}>
-          {posts.length && posts.map(({ id, title, content, updatedAt } :Post) => (
-            <HStack key={id}>
-              <VStack align={'start'}>
-                <Text fontWeight={600}>{title}</Text>
-                <Text>{updatedAt}</Text>
-                <Text>{content.substring(0, 230)}...</Text>
-              </VStack>
-            </HStack>
-          ))}
-        </Flex>
-      </Container >
-      <Divider mt={10} mb={2}/>
+      
+      <Flex spacing={10} mb={5}>
+        {posts.length && posts.map(({ id, title, content, updatedAt } :Post) => (
+          <HStack key={id}>
+            <VStack align={'start'}>
+              <Text fontWeight={600}>{title}</Text>
+              <Text>{updatedAt}</Text>
+              <Text>{content.substring(0, 230)}...</Text>
+            </VStack>
+          </HStack>
+        ))}
+      </Flex>
     </Box>
   )
 }
