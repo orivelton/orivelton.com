@@ -1,11 +1,14 @@
 import { Box, Flex, HStack} from '@chakra-ui/react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { DarkModeSwitch } from './DarkModeSwitch'
 import Logo from './Logo'
+import style from '../scss/Nav.scss';
 
 const Links = ['Projects', 'Blog', 'Contact']
 
 export default function Nav() {
+  const router = useRouter();
   return (
     <>
       <Box px={4}>
@@ -27,7 +30,9 @@ export default function Nav() {
                   href={`/${link.toLowerCase()}`}
                   title={`Go to ${link}`}
                 >
-                  {link}
+                  <a className={router.pathname === `/${link.toLowerCase()}` ? 'selected' : 'link'}>
+                    {link}
+                  </a>
                 </Link>
               ))}
             </HStack>
