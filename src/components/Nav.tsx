@@ -27,10 +27,10 @@ export default function Nav() {
                   py={1}
                   rounded={'md'}
                   _hover={{ textDecoration: 'none', bg: 'gray.200' }}
-                  href={link === '/Home' ? '/' : `/${link.toLowerCase()}`}
+                  href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}
                   title={`Go to ${link === '/Home' ? 'Home' : link}`}
                 >
-                  <a className={router.pathname === `/${link.toLowerCase()}` ? 'selected' : 'link'}>
+                  <a className={router.pathname === `/${link.toLowerCase()}` || router.pathname === '/' && link === 'Home' ? 'selected' : 'link'}>
                     {link}
                   </a>
                 </Link>
