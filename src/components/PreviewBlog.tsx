@@ -4,7 +4,7 @@ import { Post } from '../interfaces/Post'
 export default function PreviewBlog({ posts }: any) {
   return (
     <Box p={4}>
-      <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+      <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'} mb={6}>
         <Heading fontSize={'3xl'}>Most Popular</Heading>
       </Stack>
 
@@ -14,6 +14,7 @@ export default function PreviewBlog({ posts }: any) {
           <HStack key={id}>
             <VStack align={'start'}>
               <Text fontWeight={600}>{title}</Text>
+              <Text fontWeight={600}>{id}</Text>
               <Text>{updatedAt}</Text>
               <Text>{content.substring(0, 230)}...</Text>
             </VStack>
