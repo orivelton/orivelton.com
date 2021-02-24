@@ -5,7 +5,7 @@ import { DarkModeSwitch } from './DarkModeSwitch'
 import Logo from './Logo'
 import style from '../scss/Nav.scss';
 
-const Links = ['Projects', 'Blog', 'Contact']
+const Links = ['Home', 'Projects', 'Blog', 'Contact']
 
 export default function Nav() {
   const router = useRouter();
@@ -27,8 +27,8 @@ export default function Nav() {
                   py={1}
                   rounded={'md'}
                   _hover={{ textDecoration: 'none', bg: 'gray.200' }}
-                  href={`/${link.toLowerCase()}`}
-                  title={`Go to ${link}`}
+                  href={link === '/Home' ? '/' : `/${link.toLowerCase()}`}
+                  title={`Go to ${link === '/Home' ? 'Home' : link}`}
                 >
                   <a className={router.pathname === `/${link.toLowerCase()}` ? 'selected' : 'link'}>
                     {link}

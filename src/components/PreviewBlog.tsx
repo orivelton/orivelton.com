@@ -5,7 +5,7 @@ export default function PreviewBlog({ posts }: any) {
   return (
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-        <Heading fontSize={'3xl'}>Latest posts</Heading>
+        <Heading fontSize={'3xl'}>Most Popular</Heading>
       </Stack>
 
       
