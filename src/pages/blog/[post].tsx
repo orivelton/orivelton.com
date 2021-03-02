@@ -8,11 +8,11 @@ export default function BlogPage({ post: { content } }: any) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async ({ params: { post } }) => {
   const { data } = await Request.query({
     query: gql`
       query {
-        post(id: "603254230e0fba001506f870") {
+        post(id: "${post}") {
           title
           content
           image {

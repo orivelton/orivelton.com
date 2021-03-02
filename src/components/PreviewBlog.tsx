@@ -12,7 +12,10 @@ export default function PreviewBlog({ posts }: any) {
       
       <Flex spacing={10} mb={5}>
         {posts.length && posts.map(({ id, title, content, updatedAt } :Post) => (
-          <Link href={`/${id}`}>
+          <Link href={{
+            pathname: `/blog/${id}`,
+            query: id
+          }}>
             <HStack key={id}>
               <VStack align={'start'}>
                 <Text fontWeight={600}>{title}</Text>
