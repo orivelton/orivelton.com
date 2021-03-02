@@ -1,4 +1,5 @@
 import { Box, Container, Heading, Text, Stack, HStack, VStack, Flex, Divider } from '@chakra-ui/react'
+import Link from 'next/link'
 import { Post } from '../interfaces/Post'
 
 export default function PreviewBlog({ posts }: any) {
@@ -11,14 +12,16 @@ export default function PreviewBlog({ posts }: any) {
       
       <Flex spacing={10} mb={5}>
         {posts.length && posts.map(({ id, title, content, updatedAt } :Post) => (
-          <HStack key={id}>
-            <VStack align={'start'}>
-              <Text fontWeight={600}>{title}</Text>
-              <Text fontWeight={600}>{id}</Text>
-              <Text>{updatedAt}</Text>
-              <Text>{content.substring(0, 230)}...</Text>
-            </VStack>
-          </HStack>
+          <Link href={`/${id}`}>
+            <HStack key={id}>
+              <VStack align={'start'}>
+                <Text fontWeight={600}>{title}</Text>
+                <Text fontWeight={600}>{id}</Text>
+                <Text>{updatedAt}</Text>
+                <Text>{content.substring(0, 230)}...</Text>
+              </VStack>
+            </HStack>
+          </Link>
         ))}
       </Flex>
     </Box>
