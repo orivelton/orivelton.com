@@ -1,7 +1,7 @@
 ---
 title: Sign In Apple with Javascript
 date: '2020-07-10'
-tags: ['hello']
+tags: ['apple', 'javascript']
 summary:
 images: []
 ---
