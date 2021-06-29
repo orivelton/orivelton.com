@@ -8,7 +8,7 @@ images: []
 
 # Sign In Apple with Javascript
 
-![Sign In Apple with Javascript](./apple.png)
+![Sign In Apple with Javascript](/static/images/apple.png)
 
 <br />
 Sign in with Apple provides a fast, private way to sign into apps and websites, giving people a consistent experience they can trust and the convenience of not having to remember multiple accounts and passwords.
@@ -95,6 +95,6 @@ document.addEventListener('AppleIDSignInOnFailure', (error) => {
 
 Font: 
 
-- https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/configuring_your_webpage_for_sign_in_with_apple
+- https://apple.co/3wasYAw
 
-- https://medium.com/shopstyle-engineering/sign-in-with-apple-for-angular-8-and-nodejs-server-f37e6a81545a
+- https://bit.ly/35YmrxQ
