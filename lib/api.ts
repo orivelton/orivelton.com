@@ -19,10 +19,17 @@ export function getPostBySlug(slug: string, fields: string[] = []): PostItems {
 
   const items: PostItems = {};
 
+  // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
-    if (field === 'slug') items[field] = realSlug;
-    if (field === 'content') items[field] = content;
-    if (data[field]) items[field] = data[field];
+    if (field === 'slug') {
+      items[field] = realSlug;
+    }
+    if (field === 'content') {
+      items[field] = content;
+    }
+    if (data[field]) {
+      items[field] = data[field];
+    }
   });
 
   return items;
@@ -32,6 +39,7 @@ export function getAllPosts(fields: string[] = []): PostItems[] {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
+    // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
 }
