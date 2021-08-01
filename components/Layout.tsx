@@ -21,6 +21,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
             <Navigation />
             <ThemeSwitch />
           </div>
+          <hr />
         </div>
       </header>
       <main>

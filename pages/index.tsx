@@ -13,7 +13,12 @@ type IndexProps = {
 export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <div className="text-center">
+        <h1>Orivelton César</h1>
+        <h2>Front End Developer</h2>
+      </div>
+      <br />
+      <hr />
 
       {posts.map((post) => (
         <article key={post.slug} className="mt-12">
