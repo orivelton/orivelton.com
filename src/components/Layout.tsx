@@ -29,12 +29,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
       </main>
       <footer className="py-8">
         <div className="max-w-5xl px-8 mx-auto">
-          <a
-            className="text-gray-900 dark:text-white"
-            href="https://twitter.com/orivelton"
-          >
-            Orivelton César
-          </a>
+          Orivelton César - { new Date().getFullYear() }
         </div>
       </footer>
     </>
