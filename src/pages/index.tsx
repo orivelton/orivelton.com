@@ -26,7 +26,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
           </p>
           <h1 className="mb-2 text-xl">
             <Link as={`/posts/${slug}`} href={`/posts/[slug]`}>
-              <a className="text-gray-900 dark:text-white dark:hover:text-blue-400" title={description}>
+              <a className="text-gray-900 dark:text-white dark:hover:text-blue-400" title={`Go to ${description}`}>
                 {title}
               </a>
             </Link>
@@ -34,7 +34,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
           <h2 className="mb-3 text-sm font-extralight">{description}</h2>
           <p>
             <Link as={`/posts/${slug}`} href={`/posts/[slug]`}>
-              <a title={description}>Read More</a>
+              <a title={`Go to ${description}`}>Read More</a>
             </Link>
           </p>
         </article>
