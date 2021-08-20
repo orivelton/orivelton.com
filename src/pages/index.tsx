@@ -20,22 +20,22 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
       <br />
       <hr />
 
-      {posts.map((post) => (
-        <article key={post.slug} className="mt-12">
+      {posts.map(({ slug, date, title, description }) => (
+        <article key={slug} className="mt-12">
           <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
-            {format(parseISO(post.date), 'MMMM dd, yyyy')}
+            {format(parseISO(date), 'MMMM dd, yyyy')}
           </p>
           <h1 className="mb-2 text-xl">
-            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
+            <Link as={`/posts/${slug}`} href={`/posts/[slug]`}>
               <a className="text-gray-900 dark:text-white dark:hover:text-blue-400">
-                {post.title}
+                {title}
               </a>
             </Link>
           </h1>
-          <p className="mb-3">{post.description}</p>
+          <p className="mb-3">{description}</p>
           <p>
-            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
-              <a>Read More</a>
+            <Link as={`/posts/${slug}`} href={`/posts/[slug]`}>
+              <a title={description}>Read More</a>
             </Link>
           </p>
         </article>

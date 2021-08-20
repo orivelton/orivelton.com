@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { MetaProps } from '../types/layout';
 
-export const WEBSITE_HOST_URL = 'https://nextjs-typescript-mdx-blog.vercel.app';
+export const WEBSITE_HOST_URL = 'https://orivelton.com';
 
 const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
   const router = useRouter();
@@ -32,6 +32,7 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
       <meta name="twitter:title" content={meta.title} />
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={meta.image} />
+      <meta name="theme-color" content="#000000"></meta>
       {meta.date && (
         <meta property="article:published_time" content={meta.date} />
       )}
