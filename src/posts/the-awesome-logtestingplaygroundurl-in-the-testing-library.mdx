@@ -1,10 +1,10 @@
 ---
 title: The awesome logTestingPlaygroundURL() in the testing library
-date: "2021-09-18"
+date: "2021-09-25"
 description: "Simple and complete DOM testing playground"
 ---
 
-<div class="flex items-center justify-center mb-3">
+<div className="flex items-center justify-center mb-3">
     <img src="/images/testing-library.png" alt="Testing-Playground logo" />
 </div>
 
@@ -16,9 +16,8 @@ The best way to debugging a screen is the `logTestingPlaygroundURL()` method whi
 Let's take a look at this example below.
 
 
-## My *Avatar* component
-
-<hr /><br />
+1 - **My Avatar component**
+<hr />
 
 ```javascript
 import React from 'react'
@@ -28,7 +27,41 @@ const Avatar = (): JSX.Element => {
 }
 
 export default Avatar
-
-
 ```
+<hr />
+
+<br />
+
+2 - **My Avatar unit test**
+<hr />
+
+```javascript
+import React from 'react'
+import { render, screen } from '@testing-library/react'
+import Avatar from './Avatar'
+
+test("Render Avatar component", () => {
+    render(<Avatar />)
+    screen.logTestingPlaygroundURL()
+});
+```
+<hr /><br />
+
+Let's see the result 
+
+<div className="flex items-center justify-center mb-3">
+    <img src="/images/testing-playground.png" alt="Testing-Playground logo" />
+</div>
+
+https://testing-playground.com/gist/ff0081a05e5c86665b979bb073d3d100/6094f93054e0453fefbf9149e5e0a9ea3f46b0b2
+
+This way we can spec any element and get some query, below you can find an example:
+
+<hr />
+
+```javascript
+getByRole('img', { name: /remy sharp/i })
+```
+<hr />
+
 
