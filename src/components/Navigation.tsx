@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from 'next/link'
+import React from 'react'
 
 const Navigation = (): JSX.Element => {
   return (
@@ -11,7 +11,7 @@ const Navigation = (): JSX.Element => {
         <a className="text-gray-900 dark:text-white px-6 py-4" title="Go to About page">About</a>
       </Link>
     </nav>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

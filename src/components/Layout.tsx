@@ -1,15 +1,15 @@
-import { MetaProps } from '../types/layout';
-import Head from './Head';
-import Navigation from './Navigation';
-import ThemeSwitch from './ThemeSwitch';
+import { MetaProps } from '../types/layout'
+import Head from './Head'
+import Navigation from './Navigation'
+import ThemeSwitch from './ThemeSwitch'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 type LayoutProps = {
-  children: React.ReactNode;
-  customMeta?: MetaProps;
-};
+  children: React.ReactNode
+  customMeta?: MetaProps
+}
 
-export const WEBSITE_HOST_URL = 'https://orivelton.com';
+export const WEBSITE_HOST_URL = 'https://orivelton.com'
 
 const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
@@ -48,7 +48,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

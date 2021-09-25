@@ -1,13 +1,13 @@
-import { format, parseISO } from 'date-fns';
-import { GetStaticProps } from 'next';
-import Link from 'next/link';
-import Layout from '../components/Layout';
-import { getAllPosts } from '../lib/api';
-import { PostType } from '../types/post';
+import { format, parseISO } from 'date-fns'
+import { GetStaticProps } from 'next'
+import Link from 'next/link'
+import Layout from '../components/Layout'
+import { getAllPosts } from '../lib/api'
+import { PostType } from '../types/post'
 
 type IndexProps = {
-  posts: PostType[];
-};
+  posts: PostType[]
+}
 
 export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
@@ -40,15 +40,15 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
         </article>
       ))}
     </Layout>
-  );
-};
+  )
+}
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts(['date', 'description', 'slug', 'title']);
+  const posts = getAllPosts(['date', 'description', 'slug', 'title'])
 
   return {
     props: { posts },
-  };
-};
+  }
+}
 
-export default Index;
+export default Index
