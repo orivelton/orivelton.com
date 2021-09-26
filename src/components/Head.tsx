@@ -1,19 +1,19 @@
-import NextHead from 'next/head';
-import { useRouter } from 'next/router';
-import { MetaProps } from '../types/layout';
+import NextHead from 'next/head'
+import { useRouter } from 'next/router'
+import { MetaProps } from '../types/layout'
 
-export const WEBSITE_HOST_URL = 'https://orivelton.com';
+export const WEBSITE_HOST_URL = 'https://orivelton.com'
 
 const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
-  const router = useRouter();
+  const router = useRouter()
   const meta: MetaProps = {
     title: 'Orivelton César - Website',
     description:
-      'Sleep Deprived Father. Senior Web Developer. Lover of all things Ramen and Kpop.',
+      'Orivelton Cesar. Senior Front End Developer',
     image: `${WEBSITE_HOST_URL}/images/site-preview.png`,
     type: 'website',
     ...customMeta,
-  };
+  }
 
   return (
     <NextHead>
@@ -22,7 +22,7 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
       <meta property="og:url" content={`${WEBSITE_HOST_URL}${router.asPath}`} />
       <link rel="canonical" href={`${WEBSITE_HOST_URL}${router.asPath}`} />
       <meta property="og:type" content={meta.type} />
-      <meta property="og:site_name" content="Orivelton César - Website" />
+      <meta property="og:site_name" content="Orivelton César - Front End Developer" />
       <meta property="og:description" content={meta.description} />
       <meta property="og:title" content={meta.title} />
       <meta property="og:image" content={meta.image} />
@@ -36,7 +36,7 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
         <meta property="article:published_time" content={meta.date} />
       )}
     </NextHead>
-  );
-};
+  )
+}
 
-export default Head;
+export default Head
