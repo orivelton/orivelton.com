@@ -1,0 +1,44 @@
+---
+title: The Navigator.vibrate() method
+date: "2021-11-14"
+description: "Pattern and implementation"
+---
+
+### In this section let's learn how we can use the ***`Navigator.vibrate()`*** method.
+
+<br />
+
+![Vibrate phone option](/images/vibrate-phone.svg)
+
+Photo by [Sten Ritterfeld](https://unsplash.com/photos/eFgjzZ0FeXs)
+
+## What is the `Navigator.vibrate()` method?
+
+If you need vibrate a mobile device then you can use this method that will return true if have success otherwise will return a `false` value.
+This method has a required argument, we can parssing a `0` value, an array empty or with a sequencial of numbers.  
+
+## How to access in the browser?
+
+On browser you can use the syntax <code>***window.navigator.vibrate(0)***</code>
+
+```javascript
+  window.navigator.vibrate(0)
+  window.navigator.vibrate([10, 20, 30, 40, 50, 80, 100])
+```
+
+Each Pattern has a different vibration, if you start a new event the event before will stop automatically
+
+## What is Pattern with `Navigator.vibrate()` method?
+
+When we provide a pattern of vibration and pause intervals it's mean that each value indicates a number of milliseconds to vibrate or pause
+
+For Example: 
+
+```javascript
+  [100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100] Vibrate 'SOS' in Morse
+```
+
+
+## Project demo
+
+## Credits
