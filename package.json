@@ -1,6 +1,6 @@
 {
   "name": "orivelton",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -56,7 +56,7 @@
     "postcss": "^8.3.11",
     "prettier": "^2.4.1",
     "rehype": "^12.0.0",
-    "tailwindcss": "^2.2.19",
+    "tailwindcss": "^3.0.7",
     "typescript": "^4.4.4"
   }
 }
