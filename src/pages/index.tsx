@@ -13,6 +13,9 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
       <div className="text-center mb-10">
+        <figure>
+          <img src="https://avatars.githubusercontent.com/u/7022794?v=4" className="m-auto w-40 rounded-full shadow mb-2"/>
+        </figure>
         <h1>Orivelton César</h1>
         <h2>Front End Developer</h2>
       </div>
