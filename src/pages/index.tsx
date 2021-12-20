@@ -12,15 +12,16 @@ type IndexProps = {
 export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
-      <div className="text-center">
+      <div className="text-center mb-10">
         <h1>Orivelton César</h1>
         <h2>Front End Developer</h2>
       </div>
-      <br />
       <hr />
+    
+      <h3 className="mt-10">All posts</h3>
 
       {posts.map(({ slug, date, title, description }) => (
-        <article key={slug} className="mt-12">
+        <article key={slug} className="mt-10">
           <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
             {format(parseISO(date), 'MMMM dd, yyyy')}
           </p>
