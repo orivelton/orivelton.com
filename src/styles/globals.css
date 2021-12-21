@@ -89,6 +89,7 @@
 code[class*='language-'],
 pre[class*='language-'] {
   @apply text-gray-800 dark:text-gray-50;
+  overflow: scroll;
 }
 
 pre::-webkit-scrollbar {
