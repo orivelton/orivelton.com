@@ -19,15 +19,7 @@ Let's take a look at this example below.
 1 - **My Avatar component**
 <hr />
 
-```javascript
-import React from 'react'
-
-const Avatar = (): JSX.Element => {
-    return <img alt="Remy Sharp" src="https://i.pravatar.cc/100" />
-}
-
-export default Avatar
-```
+<iframe src="https://stackblitz.com/edit/react-ze3nvd?embed=1&file=src/Avatar.js&hideNavigation=1&view=editor" loading="lazy" height="300" width="100%"></iframe>
 <hr />
 
 <br />
@@ -35,33 +27,27 @@ export default Avatar
 2 - **My Avatar unit test**
 <hr />
 
-```javascript
-import React from 'react'
-import { render, screen } from '@testing-library/react'
-import Avatar from './Avatar'
-
-test("Render Avatar component", () => {
-    render(<Avatar />)
-    screen.logTestingPlaygroundURL()
-});
-```
+<iframe src="https://stackblitz.com/edit/react-ze3nvd?embed=1&file=src/Avatar.test.js&hideNavigation=1&view=editor" loading="lazy" height="300" width="100%"></iframe>
 <hr /><br />
 
-Let's see the result 
+Run the unit test command and let's see the result 
 
-<div className="flex items-center justify-center mb-3">
-    <img src="/images/testing-playground.png" alt="Testing-Playground logo" />
-</div>
-
-[testing-playground](https://testing-playground.com/gist/ff0081a05e5c86665b979bb073d3d100/6094f93054e0453fefbf9149e5e0a9ea3f46b0b2)
+<iframe src="https://testing-playground.com/embed/ff0081a05e5c86665b979bb073d3d100/25e46390f468787978af137be3f466687af9c982?panes=markup,preview" loading="lazy" height="450" width="100%" scrolling="no" frameBorder="0" title="Testing Playground"></iframe>
 
 This way we can spec any element and get some query, below you can find an example:
 
 <hr />
 
-```javascript
-getByRole('img', { name: /remy sharp/i })
-```
-<hr />
+<iframe src="https://stackblitz.com/edit/react-ze3nvd?embed=1&file=src/Avatar.test1.js&hideNavigation=1&view=editor" loading="lazy" height="300" width="100%"></iframe>
+<br />
+<br />
 
+
+While we developers love to code, sometimes it's better to take a break from the drudgery and let other tools do some of the heavy lifting for us. This is where the test playground comes in.
+
+The UI feels like an inspection item in the developer tools, so there is no learning curve to get the most out of the site. To make it even more convenient, there is also a browser [extension](https://chrome.google.com/webstore/detail/testing-playground/hejbmebodbijjdhflfknehhcgaklhano?hl=en) that allows you to interact with any website!
+
+# Conclusion
+
+Writing tests can be less fun than developing new features, and having to rewrite tests every time you update your code makes it even less fun. We need to stop testing implementation details and start mirroring user interactions.
 
