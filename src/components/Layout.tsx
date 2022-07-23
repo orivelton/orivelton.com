@@ -2,7 +2,7 @@ import { MetaProps } from '../types/layout'
 import Head from './Head'
 import Navigation from './Navigation'
 import ThemeSwitch from './ThemeSwitch'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
 
 type LayoutProps = {
   children: React.ReactNode
@@ -38,13 +38,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
                 <AiFillGithub />
               </a>
             </li>
-            <li className="ml-4">
-              <a href="https://www.linkedin.com/in/orivelton/" title="Go to my profile on LikedIn" rel="noopener noreferrer nofollow" target="_blank">
-                <AiFillLinkedin />
-              </a>
-            </li>
           </ul>
-
         </div>
       </footer>
     </>
